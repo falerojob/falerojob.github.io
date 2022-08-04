@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL TÍTULO DE LA PÁGINA</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <script src="mi_script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1 id="titulo"> Título </h1>
+    <p> texto texto texto</p>
+
+<form>
+
+<p>Sexo:
+<input type="radio" name="hm" value="h" required> Hombre
+<input type="radio" name="hm" value="m" required> Mujer
+</p>
+
+<p>Edad:
+    <input type="radio" name="edad" value="menor"> Menor
+    <input type="radio" name="edad" value="adulto" required> Adulto
+    <!-- required: es necesario para poder enviar el formulario -->
+</p>
+
+<p>Apellidos:
+    <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos">
+    <!-- placeholder: Muestra "Escriba" en el cuadro de texto hasta que se escribe encima -->
+</p>
+
+<p> Nombre nuevo: 
+    <input type="text" name="nombre">
+    <!-- por defecto, los cuadros de texto tienen 20 de largo -->
+</p>
+
+<p> Apellido largooo: 
+    <input type="text" name="apellidosLargos" size="40" >
+    <!-- size: un cuadro con el doble de largo -->
+</p>
+
+<p> Usuario:
+    <input type="text" name="usuario" maxlength="6">
+    <!-- maxlenght: máximo de caracteres -->    
+</p>
+
+<p> Contraseña:
+    <input type="password" name="contraseña" minlength="6">
+    <!-- password: aparecen puntos negros en lugar de letras al escribir --> 
+    <!-- maxlenght: mínimo de caracteres -->    
+</p>
+
+<button> Boton neutro 1</button>
+<input type="button" value="Boton neutro2">
+<!-- se puede crear un botón de ambas formas, pero con input el valor del botón solo puede ser un texto (no puede ser, por ejemplo, una imágen) -->  
+
+<p>Ingrese un número: 
+    <input type="number" name="numero">
+    <!-- number: solo permite escribir números, permite aumentar o subir la cantidad con una flechita -->  
+    <!-- de forma predeterminada, admite números enteros -->  
+</p>
+
+<p>Ingrese un número pero más exacto: 
+    <input type="number" name="numero" step="0.1" min="0" max="100">
+    <!-- con step: se establece la cantidad en la que cambia el valor --> 
+    <!-- min/max: establece el mínimo/máximo -->  
+</p>
+
+<input type="checkbox" name="casilla"> Casilla 1 <br>
+<!-- casilla cuadrada (puede haber varias marcadas) -->
+
+<hr>
+<!-- línea -->
+
+<input type="radio" name="radio" value="1"> Opcion 1 <br>
+<input type="radio" name="radio" value="2"> Opcion 2
+<!-- SI EL NOMBRE DEL RADIO ES EL MISMO, SOLO PUEDE HABER UNA MARCADA A LA VEZ -->
+
+<input type="submit" value="Enviar" disabled>
+    <!-- disabled: no permite presionar en Enviar -->  
+
+<hr>
+
+</form>
+
+<img src="http://3.bp.blogspot.com/-ucyJxykP0J4/UANel11AGPI/AAAAAAAAADA/4VqqLI6OIig/s1600/jose-maria-listorti-vestido-de-mujer1%5B1%5D.png" title="ÍDOLO" alt="Imagen de listorti" width="100">
+
+<!-- title: lo que muestre al pasar el mouse por encima, el nombre -->
+<!-- alt: muestra el alt cuando no pudo cargar la imagen -->
+<!-- width/height: si defines solo uno, mantiene la proporcion. Si pones ambos, la imagen se estira -->
+
+<hr>
+
+<a href="http://midoloesjose.blogspot.com/2012/07/listorti-con-peluca-o-fotos-exclusivas.html"> FANPAGE DE listorti</a>
+<!-- link / hipervinculo -->
+
+<a href="#titulo"> Ir al título</a>
+<!-- link dentro de la página; hay que asignar ID y luego llamarla con #id -->
+<hr>
+</body>
+
+
+</html>

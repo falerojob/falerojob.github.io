@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+*{
+    color: green;
+}
+
+body {
+    background-color: darkorange;
+}
+
+h1, h2 {
+    color:white;
+}
+
+p.aviso {
+    color: red;
+    width: 50%;     /* largo del elemento en comparacion al total (por defecto, el máximo) */
+    width: 200px;     /* largo del elemento en pixeles */
+    width: 200cm;     /* largo del elemento en centimetros cm */
+    /* le aplica el estilo a todos los p de clase "aviso"
+    <p class="aviso"> Esto es un aviso </p> 
+    */
+}
+
+*.aviso {
+    height: 100px ; /* altura del elemento (por defecto, lo mínimo necesario para mostrarse correctamente) */
+    
+    /* le aplica el estilo a todos los elementos de la clase aviso 
+    */
+}
+
+p#aviso {
+    /* 
+    le aplica el estilo al p CON ID "aviso"
+    */
+}
+
+
